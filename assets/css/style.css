@@ -1,0 +1,121 @@
+:root {
+    --dark: #13293d;
+    --white: #fff;
+    --radius: 10px;
+  }
+  
+  body {
+    font-size: 16px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+  
+  article {
+    color: white;
+}
+
+tr {
+    color: white;
+}
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    color: var(--white);
+  }
+  
+  nav {
+    display: flex;
+    background-color: #d8a47f;
+  }
+  
+  nav a {
+    color: var(--dark);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    background-color: var(--white);
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+    margin-top: auto;
+  }
+  
+  .cheatsheet {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 0px;
+    padding: 10px;
+    flex: 0 0 300px;
+    
+    margin: 20px;
+  }
+
+  .card:hover {
+    box-shadow: 0px 0px 10px 10px pink;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card > header {
+    border-radius: var(--radius);
+    border-style: solid;
+    border-color: pink;
+    border-width: 1px;
+    background-color: black;
+    padding: 20px;
+    position: relative;
+    top: -30px;
+    
+  }
+
+  
+  .card > p {
+    text-align: center;
+  }
+  
+  .card > img {
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
