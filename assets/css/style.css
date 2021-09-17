@@ -111,7 +111,7 @@ code {
   
   
   @media screen and (min-width: 768px) {
-    main,
+    main
     {
       flex-direction: column;
     }
