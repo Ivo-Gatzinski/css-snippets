@@ -13,12 +13,12 @@
     justify-content: flex-start;
   }
   
-  article {
+  .card {
     color: white;
 }
 
-tr {
-    color: white;
+code {
+    font-family:'Courier New', Courier, monospace;
 }
 
   h1 {
@@ -106,15 +106,13 @@ tr {
   
   .card > p {
     text-align: center;
+    font-size: 85%;
   }
   
-  .card > img {
-    width: 100%;
-  }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     main,
-    nav {
+    {
       flex-direction: column;
     }
   }
